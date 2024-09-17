@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <link rel = "stylesheet" href="css/style.css"> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arjun Fitness</title>
+    <style>
+    /* CSS Reset */
+    body{
+        /* color:black; */
+        margin:0px;
+        padding:0px;
+        background : url("./gymbg.jpeg") no-repeat center/cover;
+
+    } 
+    .left{
+        position:absolute;
+        top:0px;
+        left:0px;
+        display:inline-block;
+        display: inline-block;
+        /* border: 5px red solid; */
+        margin-top:12px
+    }
+    .mid{
+
+        display : block;
+        width:45%;
+        margin:auto;
+        text-align:center;
+        margin-top:20px ;  
+        padding-right:8px  
+    }
+
+    .right{
+        position:absolute;
+        top:0px;
+        right:0px;
+        display:inline-block;
+        margin-top:20px
+    }
+    .navbar{
+        border-radius:30px
+    }
+    .navbar li {
+        display:inline-block   
+    }
+    .navbar li a{
+        color:white;
+        font-size:16px;
+        text-decoration:none;
+        padding:3px;
+        font-family:'Times New Roman', Times, serif
+    }
+    .navbar li a:hover,.navbar li a:active{
+        color:red;
+        text-decoration : underline;
+    }
+    .btn{
+        color: black;
+        /* background-color: black; */
+        border-radius: 6px;
+        margin-right:1px;
+        cursor: pointer;
+    }
+
+    #btn1{
+        margin-right:0px;
+    }
+    .container{
+        color: black;
+        background-color: grey;
+        display:inline-block;
+        border : 2px red solid;
+        padding : 0px 18px 7px 18px;
+        margin : 61px 194px;
+        border-radius:12px;
+        /* background: url("./gym.jpeg") */
+    }
+    .container h3,h4{
+        color : black;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding-top : 2px;
+        text-align:center;
+        font-size:large;
+    }
+    form input{
+        margin-left : 157px;
+        text-align:center;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    form label{
+        margin-left:157px
+    }
+    img{
+        width:50px
+    }
+    </style>
+</head>
+<body>
+    <header class="header">
+      <div class="left">
+        <img src="./logo.jpeg" alt="bodypic">
+
+      </div>
+      <div class="mid">
+        
+        <ul class = "navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+          </ul>
+      </div>
+      <div class="right">
+      <button class = "btn" id="btn1">Call Us</button>
+      <button class= "btn">Email Us</button>
+      </div>
+      <div class= "container">
+         <h3>JOIN &nbsp; THE &nbsp; BEST &nbsp; GYM &nbsp; OF &nbsp; MUMBAI &nbsp; RIGHT &nbsp; NOW</h3>
+         <h4> !!!   HEARTY WELCOME   !!!</h4>
+         <form action = "noaction.php">
+            <label for = "name">Name:</label><br><input type = "text" name ="name" id="name" placeholder="Enter Your Name"><br><br>
+            <label for = "age">Age:</label><br><input type = "number" name = "age" id = "age" placeholder="Enter Your Age"><br><br>
+            <label for = "weight">Weight:</label><br><input type = "number" step="0.1" name="weight" id="weight" placeholder="Enter Your Weight"><br><br>
+            <label for = "age">Contact No:</label><br><input type = "text" name = "No" id = "No" placeholder="Enter Your Contact No"><br><br>
+            <label for = "name">Email id:</label><br><input type = "email" name ="email" id="email" placeholder="Enter Your email"><br><br>
+            <input type="Submit" name = "submit" id = "submit">
+         </form>
+      </div>
+    </header>
+</body>
+</html>
